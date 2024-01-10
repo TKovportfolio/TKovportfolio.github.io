@@ -1,0 +1,66 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Rokkitt&display=swap');
+
+/* All fonts */
+:root {
+    --sans-serif: 'Nunito Sans', sans-serif;
+    --serif: 'Rokkitt', serif;
+    --handwriting: 'Kalam', cursive;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans-serif);
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    background-image: url('imgs/vancouver_mountains.jpg');
+    background-size: cover;
+}
+nav {
+    height: 12vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+    height: 40px;
+    border-bottom: 3px white solid;
+}
+.nav-buttons a {
+    padding: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+.nav-buttons a:nth-child(1) { margin-left: 0px; }
+.nav-buttons a:hover { background-color: rgba(0, 0, 0, 0.5); }
+header {
+    height: 85vh;
+}
+.title-wrapper {
+    max-width: fit-content;
+    color: white;
+    margin: 80px;
+    padding: 20px;
+    background-color: black;
+}
+.title-wrapper h1 {
+    font-size: 70px;
+    width: auto;
+    font-family: var(--serif);
+}
+.title-wrapper h3 {
+    font-size: 20px;
+    width: auto;
+    font-family: var(--handwriting);
+}
