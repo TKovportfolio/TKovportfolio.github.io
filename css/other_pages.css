@@ -1,0 +1,54 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Rokkitt&display=swap');
+
+/* All fonts */
+:root {
+    --sans-serif: 'Nunito Sans', sans-serif;
+    --serif: 'Rokkitt', serif;
+    --handwriting: 'Kalam', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans-serif);
+    box-sizing: border-box;
+}
+
+nav {
+    height: 12vh;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+    height: 40px;
+    border-bottom: 3px white solid;
+}
+.nav-buttons a {
+    padding: 10px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-buttons a:nth-child(1) { margin-left: 0px; }
+.nav-buttons a:hover { 
+    background-color: white; 
+    color: black;
+}
+nav h3 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -ms-transform: translate(-50%);
+    transform: translateY(-50%);
+    font-family: var(--serif);
+    font-size: 30px;
+}
