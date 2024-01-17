@@ -60,3 +60,80 @@ var composition = [
         'tag': 'short'
     },
 ]
+var lenses = [
+    {  
+        'filename': 'lens_ball.JPG',
+        'tag': 'big'
+    },
+    {  
+        'filename': 'lex_10mm.JPG', 
+    },
+    {  
+        'filename': 'lex_18mm.JPG', 
+    },
+    {  
+        'filename': 'lex_18mm (1).JPG', 
+    },
+    {  
+        'filename': 'lex_55mm.JPG', 
+    },
+    {  
+        'filename': 'lex_80mm.JPG', 
+    },
+    {  
+        'filename': 'lex_220mm.JPG', 
+    },
+    {  
+        'filename': 'lex_eye.JPG', 
+    },
+    {  
+        'filename': 'plant.JPG', 
+    },
+]
+var photoshop = [
+    {  
+        'name': 'Time Magazine',
+        'filename': 'Time Magazine - Peitz.png',
+        'tag': 'big'
+    },
+    {  
+        'name': 'Boxing Poster',
+        'filename': 'boxing_poster (paper).jpg',
+    },
+    {  
+        'name': 'Digital Magazine',
+        'filename': 'digital_magazine.jpg',
+    },
+    {  
+        'name': 'Dispersion',
+        'filename': 'dispersion.jpg',
+    },
+    {  
+        'name': 'Minature',
+        'filename': 'dwarfs.jpg',
+        'tag': 'large'
+    },
+    {  
+        'name': 'Movie Poster',
+        'filename': 'movie.png',
+        'tag': 'weird'
+    },
+]
+var lighting = [
+    {  
+        'filename': 'butterfly_lighting.JPG',
+        'tag': 'normal'
+    },
+    {  
+        'filename': 'loop_lighting.JPG',
+        'tag': 'normal'
+    },
+    {  
+        'filename': 'split_lighting.JPG',
+        'tag': 'normal'
+    },
+    {  
+        'filename': 'dom_normal.JPG',
+        'tag': 'weird'
+    },
+]

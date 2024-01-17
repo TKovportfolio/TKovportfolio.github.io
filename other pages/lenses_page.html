@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenses</title>
+    <script src="../js/images.js"></script>
+    <script src="../js/populate_images.js"></script>
+    <link rel="stylesheet" href="../css/other_pages.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <style>
+        :root {
+            --img-width: 375px
+        }
+        .img-wrapper {
+            margin: 50px;
+            display: grid;
+            grid-template-columns: repeat(3, var(--img-width));
+            grid-template-rows: repeat(4, 250px);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px; 
+            justify-content: center;
+            overflow: hidden;
+            height: 1440.1404px;
+             
+        }
+        img {
+            width:  var(--img-width);
+            transition: all 300ms;
+        }
+
+        .img-wrapper > div {
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .img-wrapper > div:hover img {
+            transform: scale(1.2);
+            cursor: pointer;
+        }   
+
+        #popup-img {
+            transform: scale(2.2);
+        }
+
+        #bigger-img  {
+            grid-row: 1 / span 2; 
+            grid-column: 1 / span 2;
+            padding: 0;
+        }
+        #bigger-img img {
+            
+            width: 760px;
+            height: 510px;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <h3>Thomas Kovacs</h3>
+        <div class="nav-buttons">
+            <a href="../index.html">Home</a>
+            <a href="composition_page.html">Composition</a>
+            <a href="photoshop_page.html">Digital Processing</a>
+            <a href="lighting_page.html">Lighting</a>
+        </div>
+    </nav>
+    <section>
+        <div class="img-wrapper" id="img-wrapper">
+            <script>
+                populate_lenses()
+            </script>
+        </div>
+    </section>
+    <div id="popup-overlay">
+        <img src="" id="popup-img">
+        <p id="close">
+            <span class="material-symbols-outlined" style="font-size: 40px;">
+                close
+            </span>
+        </p>
+    </div>
+</body>
+</html>

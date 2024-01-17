@@ -17,7 +17,9 @@
     font-family: var(--sans-serif);
     box-sizing: border-box;
 }
-
+body {
+    height: 100%;
+}
 .main-wrapper {
     background-image: url('../imgs/vancouver_mountains.jpg');
     background-size: cover;
